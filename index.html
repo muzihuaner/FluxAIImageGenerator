@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 图像生成网站 - FLUX.1</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+    <div class="w-full md:w-3/4 max-w-5xl p-4">
+        <h1 class="text-3xl font-bold text-center mb-4">Flux AI 图像生成器 - FLUX.1</h1>
+        <p class="text-center mb-8 text-lg">
+            利用先进的 AI 技术将您的想法转化为令人惊叹的视觉效果。在几秒钟内创建独特的高质量图像。
+        </p>
+        
+        <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.40.0/gradio.js"></script>
+        <gradio-app src="https://christianhappy-flux-1-schnell.hf.space"></gradio-app>
+        <h2 class="text-2xl font-bold mb-4">如何使用</h2>
+        <ul class="list-disc list-inside mb-8">
+            <li>在输入框中输入您想要生成的图像描述。</li>
+            <li>点击“RUN”按钮。</li>
+            <li>等待几秒钟，生成的图像将出现在下方。</li>
+        </ul>
+    </div>
+</body>
+</html>
